@@ -1,0 +1,32 @@
+{
+  "name": "Newrelic Browser Application",
+  "version": "1.0.0",
+  "description": "Add koken as newrelic browser application",
+  "demo": "https://www.silkenbäumer.de/",
+  "author": {
+    "name": "Karsten Silkenbäumer",
+    "link": "https://www.kluks.de/"
+  },
+  "data": {
+    "license_key": {
+      "label": "Newrelic License Key",
+      "info": "You get this from your newrelic installation.",
+      "type": "string",
+      "value": "",
+      "validation": {
+        "type": "not_empty",
+        "error_message": "You need to provide your license key."
+      }
+    },
+    "application_id": {
+      "label": "Newrelic Application ID",
+      "info": "The application ID of the browser application set up inside Newrelic",
+      "type": "string",
+      "value": "",
+      "validation": {
+        "type": "not_empty",
+        "error_message": "You need to provide the application id."
+      }
+    }
+  }
+}
